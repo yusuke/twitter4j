@@ -2,11 +2,12 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.twitter4j</groupId>
     <artifactId>twitter4j</artifactId>
-    <version>4.0.6</version>
+    <version>5.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>twitter4j</name>
     <description>A Java library for the Twitter API</description>
     <url>http://twitter4j.org/</url>
+
     <licenses>
         <license>
             <name>Apache License 2.0</name>
@@ -14,14 +15,14 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+
     <scm>
         <url>https://github.com/yusuke/twitter4j</url>
         <connection>scm:git:https://github.com/yusuke/twitter4j.git</connection>
-        <developerConnection>scm:git:https://github.com/yusuke/twitter4j.git
-        </developerConnection>
+        <developerConnection>scm:git:https://github.com/yusuke/twitter4j.git</developerConnection>
+        <tag>5.0.0-SNAPSHOT</tag>
+    </scm>
 
-    <tag>4.0.6</tag>
-  </scm>
     <developers>
         <developer>
             <id>yusuke</id>
@@ -36,10 +37,12 @@
             <timezone>9</timezone>
         </developer>
     </developers>
+
     <issueManagement>
         <system>YouTrack</system>
         <url>http://issue.twitter4j.org/youtrack/issues?q=project%3A+Twitter4J</url>
     </issueManagement>
+
     <mailingLists>
         <mailingList>
             <name>Twitter4J</name>
@@ -49,13 +52,13 @@
             <archive>http://groups.google.com/group/twitter4j</archive>
         </mailingList>
     </mailingLists>
+
     <distributionManagement>
         <repository>
             <id>sonatype-nexus-staging</id>
             <name>Nexus Release Repository</name>
             <uniqueVersion>false</uniqueVersion>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/
-            </url>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
         <snapshotRepository>
             <id>org.twitter4j</id>
@@ -64,6 +67,7 @@
             <url>file:${user.home}/maven2/</url>
         </snapshotRepository>
     </distributionManagement>
+
     <profiles>
         <profile>
             <id>release-sign-artifacts</id>
@@ -78,7 +82,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.4</version>
+                        <version>1.6</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>

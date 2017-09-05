@@ -16,7 +16,10 @@
 
 package twitter4j.examples.stream;
 
-import twitter4j.*;
+import org.twitter4j.core.*;
+import org.twitter4j.stream.SiteStreamsListener;
+import org.twitter4j.stream.TwitterStream;
+import org.twitter4j.stream.TwitterStreamFactory;
 
 /**
  * <p>This is a code example of Twitter4J Streaming API - Site Streams support.<br>
